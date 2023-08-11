@@ -17,6 +17,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
   overflow: hidden auto;
+  user-select: none;
   &.body_hovered {
     background-color: rgba($black, 1);
     position: relative;
