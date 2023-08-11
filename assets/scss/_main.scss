@@ -33,5 +33,48 @@ body{
   }
 }
 
+body {
+  // position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  outline: 0 !important;
+  display: block !important;
+  user-select: none !important;
+  font-family: 'Roboto' !important;
+  & main {
+    width: 100vw !important;
+    max-width: none !important;
+    height: 100% !important;
+    margin: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 0px !important;
+    background-size: cover;
+    background-position: top center;
+    &>.mainInner {
+      height: 100% !important;
+      border: 0 !important;
+      position: relative !important;
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      outline: 0 !important;
+      overflow: hidden !important;
+      margin: auto !important;
+      flex-wrap: nowrap;
+      &> [data-page-name] {
+        overflow: hidden auto;
+      }
+      & .innerPage {
+        min-height: 100vh;
+      }
+    }
+  }
+}
+
 
 
