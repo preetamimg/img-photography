@@ -1,0 +1,13 @@
+.copyrightfooter {
+    & .sociallink, & .copyright {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        color: $gray-500;
+    }
+    & .sociallink {
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.navheader {
+    & .navbar-brand {
+        height: 65px;
+    }
+    & .navbar-toggler {
+        gap: 5px;
+        & .menulist {
+            height: 2px;
+            width: 22px;
+        }
+    }
+    & .navbar-nav {
+        & .nav-item {
+            & .nav-link {
+                color: $gray-500;
+                font-size: 12px;
+                transition: all 0.3s ease-in-out;
+                text-transform: uppercase;
+                &:hover, &.active{
+                    color: $white;
+                }
+            }
+            & .menubtn {
+                & .dots {
+                    & .inner_dot {
+                        height: 4px;
+                        width: 4px;
+                        background-color: $gray-500;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                &:hover{
+                    & .inner_dot{
+                        background-color: $white;
+                    }
+                }
+            }
+            &:hover{
+                & .sublink{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            & .sublink {
+                // background-color: rgba($black, 0.1);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+    &.offbody{
+        & .offcanvas-header {
+            & .offcanvas-title {
+                height: 50px;
+                & img{
+                    object-fit: contain;
+                }
+            }
+            & .closeBtn {
+                width: 30px;
+            }
+        }
+        & .navbar-nav {
+            & .nav-item {
+                & .nav-link {
+                    font-size: 20px;
+                    &.innerlink {
+                        font-size: 14px;
+                    }
+                }
+                & .sublink {
+                    opacity: 1;
+                    visibility: visible;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        height: 100%;
+                        left: 0;
+                        width: 1px;
+                        position: absolute;
+                        background-color: rgba($white, 0.15);
+                    }
+                }
+            }
+        }
+    }
+}
