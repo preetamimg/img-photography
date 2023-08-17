@@ -26,7 +26,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- *Dynamic Meta Tags (Should change for every page)* -->
-    <title>Photography Home</title>
+    <title>Photography About US</title>
         <!-- *Required meta tags* -->
     <meta name="title" content="Title here" />
     <meta name="discrption" content="Discrption here" />
@@ -45,10 +45,12 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-original.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
+    <!-- *jquery -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
-    <link rel="stylesheet" href="assets/css/indexPage.min.css">
+    <link rel="stylesheet" href="assets/css/aboutUs.min.css">
 </head>
 
 <body >
@@ -103,28 +105,94 @@
                     </div>
             </nav>
             <!-- *** Header End -->
-        
-            <!-- *** Hero Section Start -->
-            <div class="container-fluid vh-100 overflow-hidden position-relative px-0 videoHerosection">
-                <video src="assets/img/home-bg.mp4" muted autoplay loop class="videosecton position-absolute"></video>
+            <!-- ! Ashade Link Start -->
+            <div class="innerPages d-md-block d-none">
                 <div class="ashadeLink leftSide">
                     <div class="mainlinks mx-auto d-flex flex-column text-center">
-                        <span class="d-inline-flex fw-bold subcontentHeading">My Photo Portfolio</span>
-                        <span class="d-inline-flex fw-bold justify-content-end mainlinkHeading">Explore Works</span>
+                        <span class="d-inline-flex fw-bold subcontentHeading">Who am i?</span>
+                        <span class="d-inline-flex fw-bold justify-content-end mainlinkHeading">about me</span>
                     </div>
                 </div>
-                <div class="ashadeLink rightSide">
-                    <div class="mainlinks me-auto d-flex flex-column text-center">
-                        <span class="d-inline-flex fw-bold justify-content-end subcontentHeading">HOW TO FIND ME</span>
-                        <span class="d-inline-flex fw-bold mainlinkHeading">CONTACT ME</span>
+                <div class="ashadeLink rightSide d-lg-flex d-none">
+                    <div class="mainlinks me-auto d-flex flex-column text-center position-relative">
+                        <span class="d-inline-flex fw-bold justify-content-end subcontentHeading">back to</span>
+                        <span class="d-inline-flex fw-bold mainlinkHeading">top</span>
+                        <a href="#" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ! Ashade Link End -->
+            <!-- *** Hero Section Start -->
+            <div class="container-fluid aboutHerosection overflow-hidden position-relative innerPageTopSection px-0">
+                <div class="mobileViewHeading  d-md-none d-block">
+                    <div class="mainlinks mx-auto d-flex flex-column text-center">
+                        <span class="d-inlineflex fw-bold  subcontentHeading">Who am i?</span>
+                        <span class="d-inlineflex fw-bold  justify-content-end mainlinkHeading">about me</span>
+                    </div>
+                </div>
+                <div class="container innerfluid">
+                    <div class="row px-md-5 px-2">
+                        <div class="col-lg-6">
+                            <div class="containetSide ms-md-4">
+                                <div class="heading text-uppercase contact w-100 fw-bold text-white mt-5 mb-3"><span class="fw-semibold text-white text-opacity-25 d-flex">My contacts and socials</span>How to find me</div>
+                                <div class="conatent text-white-50 fw-normal my-md-4 my-3">Nice to meet you, friend! My name is Andrew Shade. I’m a professional photographer from Denver, state Colorado. I hope, that you will enjoy with my photo portfolio and after that we can create something great together!</div>
+                                <div class="conatent text-white-50 fw-normal mb-md-4 mb-3">Through the lens the world looks different and i would like to show you this difference. I learned that from age 10, when I was first time take photos on manual camera with my Dad. After that with years of practice and tons of experience I learned the techniques, that helps me in my work with modern brands and companies. And all of this may be yours, just get in touch.</div>
+                                <div class="signature text-end"><div class="signatureImg d-inline-flex"><img src="assets/img/signature.png" class="h-100" alt="signature"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-lg-block d-none">
+                            <div class="aboutUserImg h-100 me-4"><img src="assets/img/about-me.jpg" class="w-100 h-100" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- *** Hero Section End -->
-        
+            
+
+            <!-- ** Counter Section Start -->
+            <div class="container-fluid counterSection counter-show mb-5 pb-5 statistics-section" id="counter">
+                <div class="container">
+                    <div class="row gy-4 gy-md-0">
+                        <div class="col-md-3 col-6">
+                            <div class="counterCard card bg-transparent border-0">
+                                <div class="card-body text-center">
+                                    <div class="counterName text-white text-opacity-25 fw-semibold">AWARDS WON</div>
+                                    <div class="counts counter text-white fw-bolder">25</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="counterCard card bg-transparent border-0">
+                                <div class="card-body text-center">
+                                    <div class="counterName text-white text-opacity-25 fw-semibold">PROJECTS DONE</div>
+                                    <div class="counts counter text-white fw-bolder">75</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="counterCard card bg-transparent border-0">
+                                <div class="card-body text-center">
+                                    <div class="counterName text-white text-opacity-25 fw-semibold">HAPPY CLIENTS</div>
+                                    <div class="counts counter text-white fw-bolder">215</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="counterCard card bg-transparent border-0">
+                                <div class="card-body text-center">
+                                    <div class="counterName text-white text-opacity-25 fw-semibold">GREATEST SHOTS</div>
+                                    <div class="counts counter text-white fw-bolder">5142</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ** Counter Section End -->
+
             <!-- ** Copy Right Footer Start -->
-            <div class="container-fluid fixed-bottom copyrightfooter py-3 px-lg-5 px-sm-4 px-3">
-                <div class="contai-ner">
+            <div class="container-fluid fixedbottom copyrightfooter py-3">
+                <div class="container-fluid px-lg-5 px-sm-4 px-3">
                     <div class="row align-items-center">
                         <div class="col">
                             <ul class="list-unstyled socialgroup d-flex gap-4 align-items-center  m-sm-0 mb-2 justify-content-sm-start justify-content-center">
@@ -295,5 +363,7 @@
     </div>
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- *Counters Js* -->
+    <script src="assets/js/counter.js"></script>
 </body>
 </html>

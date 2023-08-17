@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "variables";
+@import "fonts";
+@import "main";
+@import "navbar";
+@import "centerContent";
+@import "aboutHeroSection";
+@import "heading";
+@import "counters";
+@import "footer";
+@import "aboutOffcanvas";
+@import "responsive";
+
+
+@include media-breakpoint(basic) {
+    .mainInner {
+        position: relative;
+        &::before{
+            content: '';
+            height: 100vh;
+            width: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: radial-gradient(ellipse at left top, #28282E 0%,#000000 70%);
+        }
+    }
+    .aboutHerosection {
+        & .innerfluid {
+            & .conatent {
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.4px;
+            }
+            & .signature {
+                & .signatureImg {
+                    height: 116px;
+                    & img {
+                        object-fit: contain;
+                    }
+                }
+            }
+            & .aboutUserImg {
+                & img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .aboutHerosection {
+        & .innerfluid {
+            & .conatent {
+                font-size: 14px;
+                line-height: 26px;
+            }
+            & .signature {
+                & .signatureImg {
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .aboutHerosection {
+        & .innerfluid {
+            & .signature {
+                & .signatureImg {
+                    height: 80px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .aboutHerosection {
+        & .innerfluid {
+            & .signature {
+                & .signatureImg {
+                    height: 70px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutHerosection {
+        & .innerfluid {
+            & .signature {
+                & .signatureImg {
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

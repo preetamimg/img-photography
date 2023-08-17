@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import "responsive";
+@include media-breakpoint(basic) {
+    .aboutoffcanvas {
+        & .offcanvas-header {
+            min-width: 25px;
+            & .innerclosed {
+                transform: rotate(-90deg);
+                height: 150px;
+                & .closeBtn {
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%);
+                    font-size: 14px;
+                    transition: all ease-in-out 0.3s;
+                    & span {
+                        width: 16px;
+                        & img {
+                            filter: brightness(0.4);
+                            transition: all ease-in-out 0.3s;
+                        }
+                    }
+                    &:hover{
+                        color: $white !important;
+                        & span {
+                            & img {
+                                filter: brightness(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .userimg {
+                width: 150px;
+                height: 150px;
+                & img {
+                    object-fit: cover;
+                }
+            }
+            & .userName {
+                line-height: normal;
+                transform: translateY(-50%);
+                font-size: 25px;
+                & span {
+                    font-size: 12px;
+                    line-height: 15px;
+                    transition: all ease-in-out 0.3s;
+                }
+                &:hover{
+                    & span {
+                        color: $white !important;
+                    }
+                }
+                &.contact {
+                    transform: unset;
+                }
+            }
+            & .usercontent {
+                font-size: 15px;
+                line-height: 28px;
+            }
+            & .morebtn {
+                font-size: 12px;
+                line-height: normal;
+                & .learn {
+                    transition: all ease-in-out 0.3s;
+                }
+                & .arrow {
+                    height: 18px;
+                    width: 18px;
+                }
+                &:hover{
+                    & .learn{
+                        transform: translateX(-5px);
+                    }
+                }
+            }
+            & .contactDetails {
+                & .card {
+                    & .contactIcon {
+                        height: 36px;
+                        width: 36px;
+                        border: 2px solid rgba($white, 0.25);
+                        padding: 6px;
+                        & img {
+                            filter: brightness(0.5);
+                        }
+                    }
+                    & .contactus {
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                    & .contactIcon, & .contactus, & img {
+                        transition: all ease-in-out 0.3s;
+                    }
+                    &:hover{
+                        & .contactIcon {
+                            border-color: $white;
+                            & img {
+                                filter: brightness(1);
+                            }
+                        }
+                        & .contactus {
+                            color: $white !important;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+    .offcanvas-backdrop{
+        &.fade{
+            &.show {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .aboutoffcanvas {
+        max-width: 350px;
+        & .offcanvas-header {
+            & .innerclosed {
+                height: 150px;
+                & .closeBtn {
+                    font-size: 14px;
+                    & span {
+                        width: 16px;
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            & .userimg {
+                width: 100px;
+                height: 100px;
+            }
+            & .userName {
+                font-size: 20px;
+            }
+            & .usercontent {
+                font-size: 14px;
+                line-height: 25px;
+            }
+            & .contactDetails {
+                & .card {
+                    & .contactIcon {
+                        height: 32px;
+                        width: 32px;
+                        padding: 5px;
+                    }
+                    & .contactus {
+                        font-size: 14px;
+                    }   
+                }
+            }
+        }
+    }
+}

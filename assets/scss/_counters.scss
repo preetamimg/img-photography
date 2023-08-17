@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import "responsive";
+
+@include media-breakpoint(basic) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counterName {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin: 0 0 -2px 0;
+                }
+                & .counts {
+                    font-size: 100px;
+                    line-height: 100%;
+                    margin-bottom: -14px;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counterName {
+                }
+                & .counts {
+                    font-size: 80px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counterName {
+                    font-size: 15px;
+                    line-height: 18px;
+                }
+                & .counts {
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counterName {
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+                & .counts {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counts {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .counterSection {
+        & .counterCard {
+            & .card-body {
+                & .counts {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}

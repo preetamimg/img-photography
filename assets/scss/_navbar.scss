@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import "responsive";
 .navheader {
     & .navbar-brand {
         height: 65px;
@@ -84,5 +86,46 @@
                 }
             }
         }
+    }
+}
+
+
+@include media-breakpoint(basic) {
+    .innerPageTopSection{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .innerPageTopSection{
+        padding-top: 110px;
+        padding-bottom: 100px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .innerPageTopSection{
+        padding-bottom: 60px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .innerPageTopSection{
+        padding-bottom: 50px;
     }
 }

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import "responsive";
 .ashadeLink {
     position: fixed;
     width: 100vh;
@@ -12,12 +12,12 @@
     cursor: pointer;
     padding-left: 140px;
     top: 100%;
-    &.asdadework {
+    &.leftSide {
         left: calc(33.33% - 21px);
         text-align: center;
         padding: 0;
     }
-    &.asdadecontact {
+    &.rightSide {
         left: calc(66.66% + 21px);
         text-align: left;
         & .mainlinks {
@@ -52,6 +52,7 @@
         & .mainlinkHeading {
             font-size: 40px;
             transform: translateX(20px);
+            letter-spacing: -0.5px;
         }
         &:hover{
             & span {
@@ -75,6 +76,16 @@
         top: 21px;
     }
 }
+.innerPages{
+    & .ashadeLink {
+        &.leftSide {
+            left: 40px;
+        }
+        &.rightSide{
+            left: calc(100% - 110px);
+        }
+    }
+}
 
 
 @include media-breakpoint(basic) {
@@ -85,14 +96,35 @@
 
 @include media-breakpoint-up(lg) {}
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+    .innerPages{
+        & .ashadeLink {
+            & .mainlinks {
+                & .mainlinkHeading {
+                    font-size: 45px;
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-up(xxl) {}
 
 
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .innerPages{
+        & .ashadeLink {
+            &.leftSide {
+                left: 30px;
+            }
+            &.rightSide{
+                left: calc(100% - 90px);
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(lg) {
     .ashadeLink {

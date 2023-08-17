@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import "responsive";
+
+.heading {
+    font-size: 50px;
+    line-height: 55px;
+    & span {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 -3px 0;
+    }
+}
+.mobileViewHeading {
+    position: relative;
+    &::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: rgba($white, 0.15);
+        position: absolute;
+        left: 0;
+        top: 21px;
+    }
+    & span {
+        color: rgba($white, 0.4);
+        line-height: normal;
+        text-transform: uppercase;
+        transition: all 0.5s;
+    }
+    & .subcontentHeading {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    & .mainlinkHeading {
+        transform: translateY(5px);
+        font-size: 30px;
+        letter-spacing: -0.5px;
+    }
+}
+
+@include media-breakpoint(basic) {
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {
+    .heading {
+        font-size: 45px;
+        line-height: 52px;
+        & span {
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .heading {
+        font-size: 40px;
+        line-height: 50px;
+        & span {
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .heading {
+        font-size: 38px;
+        line-height: 48px;
+        & span {
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .heading {
+        font-size: 35px;
+        line-height: 48px;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+}
