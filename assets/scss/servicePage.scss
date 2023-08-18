@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import "variables";
+@import "fonts";
+@import "main";
+@import "navbar";
+@import "centerContent";
+@import "buttons";
+// @import "aboutHeroSection";
+@import "photographerCard";
+@import "heading";
+// @import "counters";
+@import "footer";
+@import "aboutOffcanvas";
+// @import "owl";
+@import "form";
+@import "responsive";
+
+@include media-breakpoint(basic) {
+    .mainInner {
+        position: relative;
+        &::before {
+            content: "";
+            height: 100vh;
+            width: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: radial-gradient(ellipse at left top, #28282e 0%, #000000 70%);
+        }
+    }
+    .conatent {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+    .progresbar {
+        & .card {
+            // position: relative;
+            // width: 250px;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // height: 300px;
+            // border-radius: 4px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+            & .box {
+                & .percent {
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    z-index: 10;
+                    & .number {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        & .innernumber {
+                            font-size: 30px;
+                        }
+                    }
+                    & svg {
+                        position: relative;
+                        width: 150px;
+                        height: 150px;
+                        z-index: 1000;
+                        & circle {
+                            width: 100%;
+                            height: 100%;
+                            fill: none;
+                            stroke: lighten($black, 10);
+                            stroke-width: 5;
+                            stroke-linecap: round;
+                            transform: translate(5px, 5px);
+                        }
+                    }
+                }
+                & .text {
+                    position: relative;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                }
+            }
+        }
+        
+        svg circle:nth-child(2) {
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+        }
+
+        .card:nth-child(1) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 90) / 100);
+            stroke: $white;
+        }
+        
+        .card:nth-child(2) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 78) / 100);
+            stroke: $white;
+        }
+        .card:nth-child(3) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 65) / 100);
+            stroke: $white;
+        }
+        .card:nth-child(4) svg circle:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 87) / 100);
+            stroke: $white;
+        }
+    }
+}
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
+}
+
+@include media-breakpoint-down(xxl) {
+}
+
+@include media-breakpoint-down(xl) {
+    .conatent {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}

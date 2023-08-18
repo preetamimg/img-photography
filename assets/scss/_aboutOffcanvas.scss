@@ -61,53 +61,37 @@
                 font-size: 15px;
                 line-height: 28px;
             }
-            & .morebtn {
-                font-size: 12px;
+        }
+    }
+    .contactDetails {
+        & .card {
+            & .contactIcon {
+                height: 36px;
+                width: 36px;
+                border: 2px solid rgba($white, 0.25);
+                padding: 6px;
+                & img {
+                    filter: brightness(0.5);
+                }
+            }
+            & .contactus {
+                font-size: 14px;
                 line-height: normal;
-                & .learn {
-                    transition: all ease-in-out 0.3s;
-                }
-                & .arrow {
-                    height: 18px;
-                    width: 18px;
-                }
-                &:hover{
-                    & .learn{
-                        transform: translateX(-5px);
-                    }
-                }
             }
-            & .contactDetails {
-                & .card {
-                    & .contactIcon {
-                        height: 36px;
-                        width: 36px;
-                        border: 2px solid rgba($white, 0.25);
-                        padding: 6px;
-                        & img {
-                            filter: brightness(0.5);
-                        }
-                    }
-                    & .contactus {
-                        font-size: 14px;
-                        line-height: normal;
-                    }
-                    & .contactIcon, & .contactus, & img {
-                        transition: all ease-in-out 0.3s;
-                    }
-                    &:hover{
-                        & .contactIcon {
-                            border-color: $white;
-                            & img {
-                                filter: brightness(1);
-                            }
-                        }
-                        & .contactus {
-                            color: $white !important;
-                        }
-                    }   
-                }
+            & .contactIcon, & .contactus, & img {
+                transition: all ease-in-out 0.3s;
             }
+            &:hover{
+                & .contactIcon {
+                    border-color: $white;
+                    & img {
+                        filter: brightness(1);
+                    }
+                }
+                & .contactus {
+                    color: $white !important;
+                }
+            }   
         }
     }
     .offcanvas-backdrop{
@@ -163,18 +147,18 @@
                 font-size: 14px;
                 line-height: 25px;
             }
-            & .contactDetails {
-                & .card {
-                    & .contactIcon {
-                        height: 32px;
-                        width: 32px;
-                        padding: 5px;
-                    }
-                    & .contactus {
-                        font-size: 14px;
-                    }   
-                }
+        }
+    }
+    .contactDetails {
+        & .card {
+            & .contactIcon {
+                height: 32px;
+                width: 32px;
+                padding: 5px;
             }
+            & .contactus {
+                font-size: 14px;
+            }   
         }
     }
 }

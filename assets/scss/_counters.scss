@@ -50,7 +50,6 @@
             & .card-body {
                 & .counterName {
                     font-size: 15px;
-                    line-height: 18px;
                 }
                 & .counts {
                     font-size: 70px;
@@ -65,8 +64,8 @@
         & .counterCard {
             & .card-body {
                 & .counterName {
+                    margin-bottom: 5px;
                     font-size: 12px;
-                    line-height: 17px;
                 }
                 & .counts {
                     font-size: 50px;

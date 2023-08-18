@@ -1,4 +1,19 @@
-
+.morebtn {
+    font-size: 12px;
+    line-height: normal;
+    & .learn {
+        transition: all ease-in-out 0.3s;
+    }
+    & .arrow {
+        height: 18px;
+        width: 18px;
+    }
+    &:hover{
+        & .learn{
+            transform: translateX(-5px);
+        }
+    }
+}
 
 
 

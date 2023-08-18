@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "responsive";
+
+
+@include media-breakpoint(basic) {
+    .form{
+        & .form-control{
+            border: 2px solid lighten($black, 20);
+            font-size: 14px;
+            line-height: 16px;
+            transition: all 0.3s ease-in-out;
+            letter-spacing: 1px;
+            &.inputarea {
+                height: 50px;
+
+            }
+            &:hover{
+                border-color: lighten($black, 35);
+            }
+            &::placeholder{
+                color: rgba($white, 0.5);
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}

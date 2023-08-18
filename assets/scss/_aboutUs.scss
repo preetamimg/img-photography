@@ -3,12 +3,14 @@
 @import "fonts";
 @import "main";
 @import "navbar";
+@import "buttons";
 @import "centerContent";
 @import "aboutHeroSection";
 @import "heading";
 @import "counters";
 @import "footer";
 @import "aboutOffcanvas";
+@import "owl";
 @import "responsive";
 
 
@@ -26,13 +28,13 @@
             background: radial-gradient(ellipse at left top, #28282E 0%,#000000 70%);
         }
     }
+    .conatent {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
     .aboutHerosection {
         & .innerfluid {
-            & .conatent {
-                font-size: 16px;
-                line-height: 28px;
-                letter-spacing: 0.4px;
-            }
             & .signature {
                 & .signatureImg {
                     height: 116px;
@@ -44,6 +46,47 @@
             & .aboutUserImg {
                 & img {
                     object-fit: cover;
+                }
+            }
+        }
+    }
+    .ourstudio{
+        & .box-container {
+            & .box {
+                & .inner {
+                    & a {
+                        position: relative;
+                        display: flex;
+                        & img{
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &:hover{
+                            & img {
+                                transform: scale(1.1);
+                            }
+                            &::before, &::after{
+                                width: 50%;
+                                
+                            }
+                        }
+                        &::before, &::after{
+                            z-index: 2;
+                            content: '';
+                            background-color: rgba($black , 0.2);
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            width: 0px;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &::before{
+                            left: 0;
+                        }
+                        &::after{
+                            right: 0;
+                        }
+
+                    }
                 }
             }
         }
@@ -63,12 +106,12 @@
 @include media-breakpoint-down(xxl) {}
 
 @include media-breakpoint-down(xl) {
+    .conatent {
+        font-size: 14px;
+        line-height: 26px;
+    }
     .aboutHerosection {
         & .innerfluid {
-            & .conatent {
-                font-size: 14px;
-                line-height: 26px;
-            }
             & .signature {
                 & .signatureImg {
                     height: 100px;
