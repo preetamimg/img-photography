@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import "responsive";
+
+
+@include media-breakpoint(basic) {
+    .natureCards {
+        overflow: hidden;
+        transition: all ease-in-out 0.4s;
+        & .card-body {
+            & .cardImg {
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 50%;
+                    height: 100%;
+                    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+                    opacity: 0.75;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            & .ashadeLink {
+                &.rightSide {   
+                    position: absolute;
+                    top: 50%;
+                    width: 100%;
+                    min-width: unset;
+                    display: flex;
+                    justify-content: center;
+                    transform-origin: 0% 0%;
+                    transform: rotate(-90deg) translate(-50%, 0px);
+                    transition: left 1s, opacity 0.5s;
+                    z-index: 3;
+                    left: 20px;
+                }
+                & .mainlinks {
+                    & span {
+                    }
+                    & .subcontentHeading {
+                        font-size: 12px;
+                        transform: translateX(-15px);
+                        margin-bottom: 8px;
+                    }
+                    & .mainlinkHeading {
+                        font-size: 30px;
+                        line-height: 35px;
+                        transform: translateX(20px);
+                        letter-spacing: -0.5px;
+                    }
+                    &:hover{
+                        & span {
+                            color: $white;
+                        }
+                        & .subcontentHeading {
+                            transform: translateX(-5px);
+                        }
+                        & .mainlinkHeading {
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+        & .explore {
+            right: 30px;
+            bottom: 30px;
+        }
+        &.zoom{
+            &:hover{
+                transform: scale(1.05);
+                & .card-body {
+                    & .ashadeLink {
+                        & .mainlinks {
+                            & span {
+                                color: $white;
+                            }
+                            & .subcontentHeading {
+                                transform: translateX(-5px);
+                            }
+                            & .mainlinkHeading {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .loopslider {
+        & .owl-stage-outer {
+            padding: 2.5rem 0rem;
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-down(lg) {
+    .natureCards {
+        min-height: 310px;
+        & .card-body {
+            & .ashadeLink {
+                &.rightSide {  
+                }
+                & .mainlinks {
+                    & span {
+                    }
+                    & .subcontentHeading {
+                        font-size: 10px;
+                        margin-bottom: 10px;
+                    }
+                    & .mainlinkHeading {
+                        font-size: 25px;
+                        // line-height: 30px;
+                    }
+                }
+            }
+        }
+        & .explore {
+            right: 30px;
+            bottom: 30px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}

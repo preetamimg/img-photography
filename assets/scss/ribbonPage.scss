@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import "variables";
+@import "fonts";
+@import "main";
+@import "navbar";
+@import "centerContent";
+@import "buttons";
+// @import "aboutHeroSection";
+// @import "photographerCard";
+@import "heading";
+@import "natureCard";
+@import "footer";
+@import "aboutOffcanvas";
+// @import "owl";
+// @import "form";
+@import "responsive";
+
+@include media-breakpoint(basic) {
+    .mainInner {
+        position: relative;
+        &::before {
+            content: "";
+            height: 100vh;
+            width: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background: radial-gradient(ellipse at left top, #28282e 0%, #000000 70%);
+        }
+    }
+    .conatent {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+    }
+}
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
+}
+
+@include media-breakpoint-down(xxl) {
+}
+
+@include media-breakpoint-down(xl) {
+    .conatent {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(sm) {
+}
