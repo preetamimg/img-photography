@@ -26,7 +26,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- *Dynamic Meta Tags (Should change for every page)* -->
-    <title>Photography Ribbon</title>
+    <title>Photography Gallery</title>
         <!-- *Required meta tags* -->
     <meta name="title" content="Title here" />
     <meta name="discrption" content="Discrption here" />
@@ -48,25 +48,24 @@
     <!-- *jquery -->
     <script src="assets/libs/jquery/jquery.min.js"></script>
     <!-- *glightbox css -->
-    <!-- <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css"> -->
-    <!-- *Owl Css -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
+    <!-- *justify gallery Css -->
+    <link rel="stylesheet" href="assets/libs/justifiedGallery/justifiedGallery.min.css">
     <!-- *Bootstrap Css* -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- *Custom Css* -->
-    <link rel="stylesheet" href="assets/css/ribbonPage.min.css">
-    
+    <link rel="stylesheet" href="assets/css/gallery.min.css">
 </head>
 
 <body >
     <main>
         <div class="mainInner">
             <!-- ! Ashade Link Start -->
-            <!-- <div class="innerPages d-md-block d-none">
+            <div class="innerPages d-md-block d-none">
                 <div class="ashadeLink leftSide">
                     <div class="mainlinks mx-auto d-flex flex-column text-center">
-                        <span class="d-inline-flex fw-bold subcontentHeading">If You Have More Questions</span>
-                        <span class="d-inline-flex fw-bold justify-content-end mainlinkHeading">Get in Touch</span>
+                        <span class="d-inline-flex fw-bold subcontentHeading">commercal photos</span>
+                        <span class="d-inline-flex fw-bold justify-content-end mainlinkHeading">auto showroom</span>
                     </div>
                 </div>
                 <div class="ashadeLink rightSide d-lg-flex d-none">
@@ -76,7 +75,7 @@
                         <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- ! Ashade Link End -->
             <!-- *** Header Start -->
             <nav class="navbar navheader navbar-expand-lg fixed-top bg-transparent py-4" aria-label="Offcanvas navbar large">
@@ -90,11 +89,11 @@
                         <ul class="navbar-nav d-lg-flex d-none justify-content-end flex-grow-1 align-items-center gap-4 pe-3">
                             <li class="nav-item"><a class="nav-link hoverd fw-medium" href="index.html">Home</a></li>
                             <li class="nav-item position-relative">
-                                <a class="nav-link hoverd fw-medium active" aria-current="page" href="javascript:;">pages</a>
+                                <a class="nav-link hoverd fw-medium" href="javascript:;">pages</a>
                                 <ul class="list-unstyled pt-2 sublink position-absolute">
                                     <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2" href="aboutUs.html">About Us</a></li>
                                     <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2" href="service.html">services</a></li>
-                                    <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2 active" href="ribbon.html">Ribbon</a></li>
+                                    <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2" href="ribbon.html">Ribbon</a></li>
                                     <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
                                     <li><a class="nav-link hoverd fw-medium innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
                                 </ul>
@@ -110,8 +109,8 @@
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link hoverd fw-medium" href="javascript:;">Works</a></li>
-                            <li class="nav-item"><a class="nav-link hoverd fw-medium" href="javascript:;">Stories</a></li>
-                            <li class="nav-item"><a class="nav-link hoverd fw-medium" href="contactus.html">contact us</a></li>
+                            <li class="nav-item"><a class="nav-link hoverd fw-medium" href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">Stories</a></li>
+                            <li class="nav-item"><a class="nav-link hoverd fw-medium active" aria-current="page" href="contactus.html">contact us</a></li>
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item">
@@ -127,96 +126,71 @@
                     </div>
             </nav>
             <!-- *** Header End -->
-            <!-- *** Hero Section Start -->
-            <div class="container-fluid vh-100 pb-5 aboutHerosection overflow-hidden position-relative innerPageTopSection">
-                <!-- <div class="mobileViewHeading  d-md-none d-block">
-                    <div class="mainlinks mx-auto d-flex flex-column text-center">
-                        <span class="d-inlineflex fw-bold  subcontentHeading">If You Have More Questions</span>
-                        <span class="d-inlineflex fw-bold  justify-content-end mainlinkHeading">Get in Touch</span>
+            <div class="maincontant_InnerPage">
+                <!-- *** Hero Section Start -->
+                <div class="container-fluid mb-5 pb-5 aboutHerosection overflow-hidden position-relative innerPageTopSection">
+                    <div class="mobileViewHeading  d-md-none d-block">
+                        <div class="mainlinks mx-auto d-flex flex-column text-center">
+                            <span class="d-inlineflex fw-bold  subcontentHeading">commercal photos</span>
+                            <span class="d-inlineflex fw-bold  justify-content-end mainlinkHeading">auto showroom</span>
+                        </div>
                     </div>
-                </div> -->
-                <div class="innerfluid h-100 d-flex align-items-center">
-                    <div class="loop row mx-0 loopslider owl-carousel">
-                        <div class="item col-12">
-                            <div class="card bg-transparent border-0 rounded-0 position-relative natureCards mnhcard">
-                                <div class="card-body p-0">
-                                    <div class="cardImg"><img src="assets/img/album02.jpg" class="w-100" alt=""></div>
-                                    <div class="ashadeLink rightSide position-absolute ps-0">
-                                        <div class="mainlinks  d-flex flex-column text-center position-relative">
-                                            <span class="d-inline-flex fw-bold justify-content-start subcontentHeading">Commercial Photos</span>
-                                            <span class="d-inline-flex fw-bold mainlinkHeading">Harley Davidson</span>
-                                        </div>
-                                    </div>
+                    <div class="innerfluid">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-10 col-12 mx-auto">
+                                <div class="containetSide">
+                                    <div class="conatent text-white-50 text-center fw-normal my-md-4 my-3">Even if you are not a fan of fast driving, I’m sure that fast sports cars will not leave you indifferent. And when they also are beautiful piece of art - it's just amazing.</div>
                                 </div>
-                                <div class="explore d-block position-absolute child"><a href="javascript:;"  class="text-decoration-none exploreBtn btn px-4">explore</a></div>
-                            </div>
-                        </div>
-                        <div class="item col-12">
-                            <div class="card bg-transparent border-0 rounded-0 position-relative natureCards mnhcard">
-                                <div class="card-body p-0">
-                                    <div class="cardImg"><img src="assets/img/album05.jpg" class="w-100" alt=""></div>
-                                    <div class="ashadeLink rightSide position-absolute ps-0">
-                                        <div class="mainlinks  d-flex flex-column text-center position-relative">
-                                            <span class="d-inline-flex fw-bold justify-content-start subcontentHeading">Personal Session</span>
-                                            <span class="d-inline-flex fw-bold mainlinkHeading">Girl on Farm</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="explore d-block position-absolute child"><a href="javascript:;"  class="text-decoration-none exploreBtn btn px-4">explore</a></div>
-                            </div>
-                        </div>
-                        <div class="item col-12">
-                            <div class="card bg-transparent border-0 rounded-0 position-relative natureCards mnhcard">
-                                <div class="card-body p-0">
-                                    <div class="cardImg"><img src="assets/img/album03.jpg" class="w-100" alt=""></div>
-                                    <div class="ashadeLink rightSide position-absolute ps-0">
-                                        <div class="mainlinks  d-flex flex-column text-center position-relative">
-                                            <span class="d-inline-flex fw-bold justify-content-start subcontentHeading">Love Story</span>
-                                            <span class="d-inline-flex fw-bold mainlinkHeading">True Love</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="explore d-block position-absolute child"><a href="javascript:;"  class="text-decoration-none exploreBtn btn px-4">explore</a></div>
-                            </div>
-                        </div>
-                        <div class="item col-12">
-                            <div class="card bg-transparent border-0 rounded-0 position-relative natureCards mnhcard">
-                                <div class="card-body p-0">
-                                    <div class="cardImg"><img src="assets/img/album06.jpg" class="w-100" alt=""></div>
-                                    <div class="ashadeLink rightSide position-absolute ps-0">
-                                        <div class="mainlinks  d-flex flex-column text-center position-relative">
-                                            <span class="d-inline-flex fw-bold justify-content-start subcontentHeading">Travel Photos</span>
-                                            <span class="d-inline-flex fw-bold mainlinkHeading">city tour</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="explore d-block position-absolute child"><a href="javascript:;"  class="text-decoration-none exploreBtn btn px-4">explore</a></div>
-                            </div>
-                        </div>
-                        <div class="item col-12">
-                            <div class="card bg-transparent border-0 rounded-0 position-relative natureCards mnhcard">
-                                <div class="card-body p-0">
-                                    <div class="cardImg"><img src="assets/img/album12.jpg" class="w-100" alt=""></div>
-                                    <div class="ashadeLink rightSide position-absolute ps-0">
-                                        <div class="mainlinks  d-flex flex-column text-center position-relative">
-                                            <span class="d-inline-flex fw-bold justify-content-start subcontentHeading">Wedding Photos</span>
-                                            <span class="d-inline-flex fw-bold mainlinkHeading">New family</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="explore d-block position-absolute child"><a href="javascript:;"  class="text-decoration-none exploreBtn btn px-4">explore</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- *** Hero Section End -->
-            <div class="maincontant_InnerPage">
-
+                <!-- *** Hero Section End -->
+                
+                <!-- * Contact Us Section Start -->
+                <div class="container-fluid mb-5 pb-5">
+                    <div class="innerfluid">
+                        <div class=" box-container">
+                            <div class="justified-gallery" id="basicExample2">
+                                <a href="assets/img/car01.jpg" class="glightbox">
+                                    <img alt="caption for image 1" src="assets/img/car01.jpg"/>
+                                </a>
+                                <a href="assets/img/car02.jpg" class="glightbox">
+                                    <img alt="caption for image 1" src="assets/img/car02.jpg"/>
+                                </a>
+                                <a href="assets/img/car03.jpg" class="glightbox">
+                                    <img alt="caption for image 2" src="assets/img/car03.jpg"/>
+                                </a>
+                                <a href="assets/img/car04.jpg" class="glightbox">
+                                    <img alt="caption for image 1" src="assets/img/car04.jpg"/>
+                                </a>
+                                <a href="assets/img/car05.jpg" class="glightbox">
+                                    <img alt="caption for image 2" src="assets/img/car05.jpg"/>
+                                </a>
+                                <a href="assets/img/car06.jpg" class="glightbox">
+                                    <img alt="caption for image 2" src="assets/img/car06.jpg"/>
+                                </a>
+                                <a href="assets/img/car07.jpg" class="glightbox">
+                                    <img alt="caption for image 2" src="assets/img/car07.jpg"/>
+                                </a>
+                                <a href="assets/img/car08.jpg" class="glightbox">
+                                    <img alt="caption for image 1" src="assets/img/car08.jpg"/>
+                                </a>
+                                <a href="assets/img/car09.jpg" class="glightbox">
+                                    <img alt="caption for image 2" src="assets/img/car09.jpg"/>
+                                </a>
+                                <a href="assets/img/album02.jpg" class="glightbox">
+                                    <img alt="caption for image 1" src="assets/img/album02.jpg"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- * Contact Us Section End -->
             </div>
 
             <!-- ** Copy Right Footer Start -->
-            <div class="container-fluid fixed-bottom copyrightfooter py-3">
+            <div class="container-fluid fixedbottom copyrightfooter py-3">
                 <div class="container-fluid px-lg-5 px-sm-4 px-3">
                     <div class="row align-items-center">
                         <div class="col">
@@ -387,76 +361,55 @@
         </div>
     </div>
 
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        Toggle static offcanvas
+        </button> -->
+        
+    <div class="offcanvas menuoffcanvas offcanvas-start bg-transparent" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="rounded-3 m-3 innerbodyPart h-100">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel"><span class="logo d-inline-flex"><img src="assets/img/logo.png" class="h-100" alt="logo"></span></h5>
+                <button type="button" class="closeBtn rounded-circle shadow-none bg-transparent d-inline-flex align-items-center justify-content-center p-2" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/close.svg" class="w-100" alt="close"></button>
+            </div>
+            <div class="offcanvas-body menubody">
+                <div class="row row-gap-2">
+                    <div class="col-12"><div class="tabheading text-white">Hotel at a Glance</div></div>
+                    <div class="col-12">
+                        <ul class="list-unstyled navs d-flex flex-column gap-2">
+                            <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/innerimg/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                            <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/innerimg/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                            <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/innerimg/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                            <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/innerimg/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                            <li class="items"><a href="javascript:;" class="text-decoration-none itemlink rounded-pill px-3 position-relative d-flex align-items-center justify-content-between">concept <span class="d-inline-flex position-relative pe-1"><img src="assets/img/innerimg/arrow-right.svg" class="h-100" alt=""></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- *glightbox Js -->
-    <!-- <script src="assets/libs/glightbox/js/glightbox.min.js"></script> -->
-    <!-- * Owl Js -->
-    <script src="assets/libs/owlcarsousel/js/owlcarsousel.min.js"></script>
+    <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
+    <!-- *justify gallery Js -->
+    <script src="assets/libs/justifiedGallery/jquery.justifiedGallery.min.js"></script>
     <!-- *Counters Js* -->
     <!-- <script src="assets/js/counter.js"></script> -->
     <script>
-        $(document).ready(function () {
-        var owl = $(".loop");
-        owl.owlCarousel({
-            center: true,
-            nav: false,
-            dots:false,
-            autoWidth:true,
-            items: 1,
-            loop: true,
-            margin: 40,
-            smartSpeed: 4000,
-            responsive: {
-            0: {
-                items: 1,
-                margin: 10,
-            },
-            450:{
-                items: 1.2,
-                margin: 20,
-            },
-            600:{
-                items: 1.4,
-                margin: 30,
-            },
-            768:{
-                items: 1.7,
-            },
-            992:{
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            }
-            },
-            URLhashListener: true,
-            autoplayHoverPause: true,
-            startPosition: "URLHash"
+        $("#basicExample2").justifiedGallery({
+            rowHeight : 300,
+            lastRow : 'nojustify',
+            margins : 15,
+            captions: false,
+            cssAnimation: true,
         });
-
-        owl.on("mousewheel", ".owl-stage", function (e) {
-            if (e.originalEvent.wheelDelta > 0) {
-            owl.trigger("next.owl");
-            } else {
-            owl.trigger("prev.owl");
-            }
-            e.preventDefault();
-        });
-        });
-
-
-        $(document).ready(function(){
-            $('.child').hover(function()
-            {
-            $(this).parent().addClass('zoom');    
-            },
-            function()
-            {
-            $(this).parent().removeClass('zoom');
-            }                                   
-            );
-        });
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+        console.log('lightbox opened');
+    });
     </script>
 </body>
 </html>

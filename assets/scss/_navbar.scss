@@ -89,6 +89,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 @include media-breakpoint(basic) {
     .innerPageTopSection{

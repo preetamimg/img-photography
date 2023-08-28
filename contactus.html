@@ -322,86 +322,75 @@
         </div>
     </div>
 
-    <div class="offcanvas offbody navheader offcanvas-end text-bg-dark" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel"><img src="assets/img/logo.png" class="h-100" alt="logo"></h5>
-            <button type="button" class="closeBtn border-0 shadow-none bg-transparent p-1" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/img/close.svg" class="w-100" alt=""></button>
+    <div class="offcanvas aboutoffcanvas offcanvas-end d-flex flex-row bg-transparent border-0" data-bs-backdrop="static" tabindex="-1" id="offcanvasAbout" aria-labelledby="offcanvasAboutLabel">
+        <div class="offcanvas-header bg-transparent px-0 align-items-start">
+            <div class="innerclosed position-relative">
+                <button type="button" class="btn closeBtn text-nowrap fw-semibold position-absolute text-white text-opacity-25 p-0 shadow-none border-0 text-uppercase d-flex align-items-center gap-2" data-bs-dismiss="offcanvas" aria-label="Close"><span class="d-inline-flex align-items-center justify-content-center"><img src="assets/img/close.svg" class="w-100 " alt="close"></span> close sidebar</button>
+            </div>
         </div>
-        <div class="offcanvas-body navbar-nav">
-            <div class="nav-item">
-                <a href="index.html" class="bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block  mb-3"> Home</a>
-                <div class="accordion accordion-flush d-flex flex-column gap-3" id="accordionFlushExample">
-                    <!-- <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="index.html" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Home
-                            </a>
+        <div class="offcanvas-body p-sm-5 p-4 text-bg-dark">
+            <div class="row gap-4">
+                <div class="col-12 position-relative">
+                    <div class="userimg overflow-hidden rounded-circle"><img src="assets/img/owner-avatar.jpg" class="w-100" alt="avatar"></div>
+                    <div class="userName text-uppercase text-end w-100 fw-bold text-white position-absolute end-0 top-50"><span class="fw-semibold text-white text-opacity-25 d-flex justify-content-end">Photographer</span>Andrew Shade</div>
+                </div>
+                <div class="col-12">
+                    <div class="usercontent text-white-50">Nice to meet you, friend! My name is Andrew Shade. I am from Denver. Photography is my passion. Through the lens the world looks different and I would like to show you this difference.</div>
+                </div>
+                <div class="col-12 text-end">
+                    <a href="javascript:;" class="text-decoration-none d-inline-flex align-items-center gap-1 morebtn text-white "><span class="learn">LEARN MORE</span> <span class="d-inline-flex justify-content-center align-items-center arrow"><img src="assets/img/rightarrow.svg" alt="arrow" class="w-100"></span></a>
+                </div>
+                <div class="col-12">
+                    <div class="userName text-uppercase contact w-100 fw-bold text-white mt-5 mb-3"><span class="fw-semibold text-white text-opacity-25 d-flex">My contacts and socials</span>How to find me</div>
+                    <div class="contactDetails row gap-3 mb-3">
+                        <div class="col-12">
+                            <div class="card bg-transparent border-0">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><div class="contactIcon rounded-circle d-flex align-items-center justify-content-center"><img src="assets/img/Location.svg" class="w-100" alt=""></div></div>
+                                    <div class="col"><a href="javascriptL:;" class="text-decoration-none contactus text-white text-opacity-25">1250 Welton St, Denver, CO 80204</a></div>
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
-                    <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="javascript:;" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Pages
-                            </a>
+                        <div class="col-12">
+                            <div class="card bg-transparent border-0">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><div class="contactIcon rounded-circle d-flex align-items-center justify-content-center"><img src="assets/img/Call.svg" class="w-100" alt=""></div></div>
+                                    <div class="col"><a href="javascriptL:;" class="text-decoration-none contactus text-white text-opacity-25">+1 (123) 456 - 78 - 90</a></div>
+                                </div>
+                            </div>
                         </div>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul class="list-unstyled sublink m-0 ps-3 ">
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="aboutUs.html">About Us</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="service.html">services</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="ribbon.html">ribbon</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                </ul>
+                        <div class="col-12">
+                            <div class="card bg-transparent border-0">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><div class="contactIcon rounded-circle d-flex align-items-center justify-content-center"><img src="assets/img/mail.svg" class="w-100" alt=""></div></div>
+                                    <div class="col"><a href="javascriptL:;" class="text-decoration-none contactus text-white text-opacity-25">photographer@example.com</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card bg-transparent border-0">
+                                <div class="row align-items-center">
+                                    <div class="col-auto"><div class="contactIcon rounded-circle d-flex align-items-center justify-content-center"><img src="assets/img/SocialMedia.svg" class="w-100" alt=""></div></div>
+                                    <div class="col copyrightfooter">
+                                        <ul class="list-unstyled socialgroup d-flex gap-4 align-items-center m-0">
+                                            <li><a href="javascript:;" class="sociallink aboutSocialLink text-white text-opacity-25 fw-medium text-decoration-none">Fb</a></li>
+                                            <li><a href="javascript:;" class="sociallink aboutSocialLink text-white text-opacity-25 fw-medium text-decoration-none">Tw</a></li>
+                                            <li><a href="javascript:;" class="sociallink aboutSocialLink text-white text-opacity-25 fw-medium text-decoration-none">In</a></li>
+                                            <li><a href="javascript:;" class="sociallink aboutSocialLink text-white text-opacity-25 fw-medium text-decoration-none">Yt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="javascript:;" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Showcase
-                            </a>
-                        </div>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body ">
-                                <ul class="list-unstyled sublink m-0 ps-3">
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                    <li><a class="nav-link hoverd fw-semibold innerlink text-nowrap p-2" href="javascript:;">work example</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="javascript:;" class="bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block"> Works</a>
-                    <a href="javascript:;" class="bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block"> stories</a>
-                    <a href="contactus.html" class="bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block"> contacts</a>
-                    <!-- <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="javascript:;" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                Works
-                            </a>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="javascript:;" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                stories
-                            </a>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-0 bg-transparent">
-                        <div class="accordion-header bg-transparent">
-                            <a href="contactus.html" class="accordion-button collapsed bg-transparent nav-link hoverd fw-bold p-0 shadow-none border-0  d-inline-block" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                contacts
-                            </a>
-                        </div>
-                    </div> -->
+                </div>
+                <div class="col-12 text-end">
+                    <a href="javascript:;" class="text-decoration-none d-inline-flex align-items-center gap-1 morebtn text-white "><span class="learn">GET IN TUCH</span> <span class="d-inline-flex justify-content-center align-items-center arrow"><img src="assets/img/rightarrow.svg" alt="arrow" class="w-100"></span></a>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- *Bootstrap Js* -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
